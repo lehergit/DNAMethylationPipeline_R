@@ -6,8 +6,6 @@ The project also includes a simulator that builds a fake dataset where you decid
 
 Everything uses base R, so there is nothing to install.
 
-![Volcano plot of simulated tumor vs. normal data](output/volcano.png)
-
 ## The idea
 
 A methylation beta value is a probe's methylation level, from 0 (never methylated) to 1 (always methylated). Beta values are easy to interpret but awkward for statistics because they are squeezed between 0 and 1. So the pipeline tests on **M-values** (the log2 odds of beta), which behave much better in t-tests, and reports on **delta beta** (the change in average beta) so the results stay interpretable.
